@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es5",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/assets/*"]
+    },
+    "lib": [
+      "dom",
+      "es5",
+      "es2017"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "vendor"
+  ]
+}

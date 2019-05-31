@@ -1,0 +1,67 @@
+@import "../../app/styles/vars";
+
+.firstscreen {
+  position: relative;
+  height: 100vh;
+}
+
+.hero {
+  grid-column: 1 / span 6;
+  margin-top: 20rem;
+  margin-bottom: 0;
+  position: relative;
+
+  @below sm  {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    margin-top: 10rem;
+  }
+}
+
+.hero__title {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero__subtitle {
+  display: block;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #898989;
+}
+
+.offer-init {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.offer-init__item {
+
+  @below sm {
+    margin-bottom: 2rem;
+  }
+}
+
+.offer-init__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  margin-top: 10rem;
+
+  @below sm {
+    grid-template-columns: initial;
+    margin-top: 5rem;
+  }
+}
+
+.offer-init__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.offer-init__desc {
+  color: #727584;
+}

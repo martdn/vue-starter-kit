@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&subset=cyrillic');
+
+html {
+  @below md {
+    font-size: 1.5625vw;
+  }
+
+  @below sm {
+    font-size: 4.44444444444444444444444444444444vw;
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  @below {
+    grid-template-columns: repeat(12, 4rem);
+    grid-gap: 0 1rem;
+  }
+}
+
+.wrapper {
+  position: relative;
+  font-family: 'Montserrat', Lato, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1.5rem;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @above md {
+    width: 944px;
+  }
+
+  @below md {
+    width: 59rem;
+  }
+
+  @below sm {
+    width: 20.5rem;
+    grid-template-columns: repeat(6,3rem);
+    grid-gap: 0 0.5rem;
+  }
+}

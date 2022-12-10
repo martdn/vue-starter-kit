@@ -42,7 +42,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "node-static": "^0.7.11",
     "nodemailer": "^6.1.1",
     "nodemon": "^1.19.0",
